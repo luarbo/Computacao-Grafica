@@ -34,12 +34,12 @@ CONFIG += debug
 CONFIG += warn_on
 
 # Se estivermos em uma plataforma Windows
-win32 { 
+win32 {
     # Se estiver em modo debug, incluimos as bibliotecas de console para podermos
     # utilizar funcoes de debug como a qDebug():
     # http://doc.qtsoftware.com/4.5/qtglobal.html#qDebug
     debug:CONFIG += console
-    
+
     # Então configura de acordo.
     CONFIG += windows
 }
@@ -62,6 +62,7 @@ HEADERS += src/camara.h \
     src/Vetor_3d.h \
     src/Cor_rgb.h \
     src/Objeto_3d.h \
+    src/CilindroY.h \
     src/Esfera.h \
     src/Triangulo.h \
     src/Plano.h \
@@ -89,6 +90,7 @@ SOURCES += src/camara.cpp \
     src/Raio.cpp \
     src/Vetor_3d.cpp \
     src/Cor_rgb.cpp \
+    src/CilindroY.cpp \
     src/Esfera.cpp \
     src/Triangulo.cpp \
     src/cenario.cpp \
